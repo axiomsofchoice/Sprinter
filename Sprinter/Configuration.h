@@ -31,7 +31,8 @@
 
 //// Calibration variables
 // X, Y, Z, E steps per unit - Metric Prusa Mendel with Wade extruder:
-#define _AXIS_STEP_PER_UNIT {80, 80, 3200/1.25,700}
+//#define _AXIS_STEP_PER_UNIT {80.0, 80.0, 2560.0, 515.91}  // Theoretical values
+#define _AXIS_STEP_PER_UNIT {80.0, 80.0, 2560.0, 642.45}  // Actual values
 // Metric Prusa Mendel with Makergear geared stepper extruder:
 //#define _AXIS_STEP_PER_UNIT {80,80,3200/1.25,1380}
 // MakerGear Hybrid Prusa Mendel:
@@ -49,11 +50,11 @@ const bool Y_ENDSTOP_INVERT = true;
 const bool Z_ENDSTOP_INVERT = true;
 
 // This determines the communication speed of the printer
-#define BAUDRATE 115200
-//#define BAUDRATE 250000
+//#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Comment out (using // at the start of the line) to disable SD support:
-#define SDSUPPORT
+//#define SDSUPPORT
 
 // Uncomment to make run init.g from SD on boot
 //#define SDINITFILE
